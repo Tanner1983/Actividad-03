@@ -16,12 +16,12 @@ elif tipoCombustible == "2":
     tipoCombustible = "95 súper"
 else:
     tipoCombustible = "97 deluxe"
-
+2
 
 print("======= Boleta de venta =======")
 
-print("Combustible:  ",tipoCombustible.rjust(8,' '))
-print("Cantidad de Litros: ",cantidaddLitros.rjust(8,' '))
-print("Total a pagar: ", str(total).rjust(8,' '))
-print("Dinero ingresado: ",str(dinero).rjust(8,' '))
-print("Vuelto: ", str(dinero - total).rjust(8,' '))
+print("Combustible           : ",tipoCombustible)
+print("Cantidad de Litros    : ",cantidaddLitros)
+print("Total a pagar         :$", total)
+print("Dinero ingresado      :$",dinero)
+print("Vuelto                :$",dinero - total)

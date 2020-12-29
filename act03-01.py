@@ -12,18 +12,16 @@ class Estudiante:
     nota4=0
     promf=0
 
-
-
 alumno = Estudiante()
 alumno.nombre = input("Ingrese nombre Alumno: ")
-alumno.nota1 = int(input("Primera Nota: "))
-alumno.nota2 = int(input("Segunda Nota: "))
-alumno.nota3 = int(input("Tercera Nota: "))
-alumno.nota4 = int(input("Cuarta Nota: "))
-alumno.promf = (alumno.nota1 + alumno.nota2 + alumno.nota3 + alumno.nota4)/4
+alumno.nota1 = float(input("Primera Nota: "))
+alumno.nota2 = float(input("Segunda Nota: "))
+alumno.nota3 = float(input("Tercera Nota: "))
+alumno.nota4 = float(input("Cuarta Nota: "))
+alumno.promf = float(alumno.nota1 + alumno.nota2 + alumno.nota3 + alumno.nota4)/4
 
 if alumno.promf >=4:
-    print("Promedio Final: ", alumno.promf, "Aprobado")    
+    print("Promedio Final: ", round(alumno.promf), "Aprobado")    
 else:
-    print("Promedio Final: ", alumno.promf, "Reprobado")
+    print("Promedio Final: ", round(alumno.promf), "Reprobado")
     
