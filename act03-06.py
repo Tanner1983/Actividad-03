@@ -20,8 +20,8 @@ else:
 
 print("======= Boleta de venta =======")
 
-print("Combustible           : ",tipoCombustible)
-print("Cantidad de Litros    : ",cantidaddLitros)
-print("Total a pagar         :$", total)
-print("Dinero ingresado      :$",dinero)
-print("Vuelto                :$",dinero - total)
+print("Combustible           : ",tipoCombustible.rjust(10))
+print("Cantidad de Litros    : ",str(cantidaddLitros).rjust(8))
+print("Total a pagar         :$", str(total).rjust(8))
+print("Dinero ingresado      :$",str(dinero).rjust(8))
+print("Vuelto                :$",str(dinero - total).rjust(8))
